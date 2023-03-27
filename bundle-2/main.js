@@ -44,21 +44,19 @@ loopToFive();
 /**
  1) Non è stata scritta correttamente la sinstassi del ciclo for, 
  usando le virgole al posto dei punti e virgola.
- 2) Non è stat messo il minore uguale, dato che la funzione deve arrivare fino a cinque
+ 2) Non è stato messo il minore uguale, dato che la funzione deve arrivare fino a cinque
  */
 
 // ESERCIZIO 4 (suggerimento: ci sono 8 errori)
 function displayEvenNumbers() {
     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
     let evenNumbers = [];
-    for (let i = 0; i <= numbers.length -1; i++) {
-        if (numbers[i] % 2 == 0); {
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 0) {
             evenNumbers.push(numbers[i]);
         }
-        console.log(evenNumbers);
-        console.log(numbers);
-        return evenNumbers;
     }
+    return evenNumbers;
 }
 displayEvenNumbers(); // [2,4,6,8]
 //RISPOSTE ES 4
@@ -66,4 +64,6 @@ displayEvenNumbers(); // [2,4,6,8]
  1)E' stato aggiunto un punto e virgola di troppo nella sintassi del ciclo for.
  2)L'operatore di uguaglianza nel ciclo if, riga 54, era stato scritto in maniera errata: mancava un uguale.
  3)nell'if manca l'indice a numbers e nel push ci va messo numbers[i], l'elemento presente all'indice i dell'array numbers.
+ 4)il return era stato scritto nel ciclo for, quindi non consente l'iterazione
+ 5)il puneo e virgola dopo l'if causava problemi
  */
