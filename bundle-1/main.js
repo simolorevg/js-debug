@@ -20,10 +20,9 @@ function checkAge() {
     } else {
         message = 'Hai più di 18 anni!';
     }
-    console.log(message);
     return message;
 }
-checkAge();
+console.log(checkAge());
 //RISPOSTE ES 1
 /**
  1) Non è presente il return, quindi non restituisce nessun valore. Ho aggiunto il console.log per poter
