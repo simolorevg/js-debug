@@ -47,13 +47,12 @@ printColorsNumber();
  */
 
 // // ESERCIZIO 3
-function addNumbers() {
-    const userNumber = prompt('Inserisci un numero');
-    const total = userNumber + 12;
-
-    console.log(`Il risultato finale è ${total}`);
-}
-addNumbers();
+// function addNumbers() {
+//     const userNumber = parseInt(prompt('Inserisci un numero'));
+//     const total = userNumber + 12;
+//     console.log(`Il risultato finale è ${total}`);
+// }
+// addNumbers();
 //RISPOSTE ES 3
 /**
  1) Non viene eseguita la conversione a numero dell'input inserito dall'utente tramite prompt.
@@ -63,25 +62,31 @@ addNumbers();
 
 
 // // ESERCIZIO 4
-// function checkAccess() {
-//     const addresses = [
-//         'mymail@mail.com',
-//         'yourmail@mail.com',
-//         'hermail@mail.com',
-//         'hismail@mail.com',
-//     ];
-//     const userEmail = prompt('Inserisci il tuo indirizzo email');
+function checkAccess() {
+    const addresses = [
+        'mymail@mail.com',
+        'yourmail@mail.com',
+        'hermail@mail.com',
+        'hismail@mail.com',
+    ];
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-//     let grantAccess = 'false';
+    let grantAccess = false;
 
-//     if (addresses.includes(userEmail)) {
-//         grantAccess = 'true';
-//     }
+    if (addresses.includes(userEmail)) {
+        grantAccess = true;
+    }
 
-//     if (grantAccess === true) {
-//         console.log('Accesso consentito!');
-//     } else {
-//         console.log('Accesso negato!');
-//     }
-// }
-// checkAccess();
+    if (grantAccess === true) {
+        console.log('Accesso consentito!');
+    } else {
+        console.log('Accesso negato!');
+    }
+}
+checkAccess();
+//RISPOSTE ES 4
+/**
+ 1) I valori booleani sono stati scritti come stringhe: così facendo, 
+ il confronto nell'if finale farà fare sempre le istruzioni dell'else
+anche quando scriveremo una mail presente nell'array
+ */
