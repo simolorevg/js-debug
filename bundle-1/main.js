@@ -47,12 +47,12 @@ printColorsNumber();
  */
 
 // // ESERCIZIO 3
-// function addNumbers() {
-//     const userNumber = parseInt(prompt('Inserisci un numero'));
-//     const total = userNumber + 12;
-//     console.log(`Il risultato finale è ${total}`);
-// }
-// addNumbers();
+function addNumbers() {
+    const userNumber = parseInt(prompt('Inserisci un numero'));
+    const total = userNumber + 12;
+    console.log(`Il risultato finale è ${total}`);
+}
+addNumbers();
 //RISPOSTE ES 3
 /**
  1) Non viene eseguita la conversione a numero dell'input inserito dall'utente tramite prompt.
