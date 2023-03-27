@@ -20,29 +20,46 @@ function checkAge() {
     } else {
         message = 'Hai più di 18 anni!';
     }
+    console.log(message);
     return message;
 }
 checkAge();
 //RISPOSTE ES 1
-//1) Non è presente il return, quindi non restituisce nessun valore
-//2) Message è una costante, quindi non gli si può riassegnare altri valori
+/**
+ 1) Non è presente il return, quindi non restituisce nessun valore. Ho aggiunto il console.log per poter
+ visualizzare il messaggio e verificare il corretto svolgimento della funzione.
+ */
+/**
+ 2) Message è una costante, quindi non gli si può riassegnare altri valori: come si cerca di fare nell'if.
+ La soluzione è dichiararla con let rendendla una variabile riassegnabile.
+ */
 
 // // ESERCIZIO 2
-// function printColorsNumber() {
-//     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-//     console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
-// }
-// printColorsNumber();
-
+function printColorsNumber() {
+    const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+    console.log(`Nella mia palette ci sono ${colors.length} colori!`);
+}
+printColorsNumber();
+//RISPOSTE ES 2
+/**
+ 1) è stata richiamata la chiave length in modo errato: errore che faccio sempre 
+ e che porta una perdita di tempo assurda.
+ */
 
 // // ESERCIZIO 3
-// function addNumbers() {
-//     const userNumber = prompt('Inserisci un numero');
-//     const total = userNumber + 12;
+function addNumbers() {
+    const userNumber = prompt('Inserisci un numero');
+    const total = userNumber + 12;
 
-//     console.log(`Il risultato finale è ${total}`);
-// }
-// addNumbers();
+    console.log(`Il risultato finale è ${total}`);
+}
+addNumbers();
+//RISPOSTE ES 3
+/**
+ 1) Non viene eseguita la conversione a numero dell'input inserito dall'utente tramite prompt.
+ Così facendo esegue una concatenazione stra stringa e valore numerico, non una somma.
+ Uso la funzione parseInt per convertirlo in valore numerico.
+ */
 
 
 // // ESERCIZIO 4
